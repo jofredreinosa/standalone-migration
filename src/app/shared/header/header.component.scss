@@ -1,0 +1,28 @@
+.navbar {
+  border: 1px solid lightgray;
+  padding: 8px 0;
+}
+.nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 0 16px;
+}
+
+.nav-item__link {
+  padding: 12px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.nav-item__link:hover {
+  border: 1px solid blue;
+  border-radius: 12px;
+}
+
+
+.router-link-active {
+  color: blue;
+}
