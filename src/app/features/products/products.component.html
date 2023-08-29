@@ -1,0 +1,16 @@
+<h2>
+  Product List
+</h2>
+
+<section class="list">
+  <ng-container *ngIf="products$ | async as products; else loadingTpl">
+    <ng-container *ngFor="let item of products">
+      <app-product-item [product]="item"></app-product-item>
+    </ng-container>
+  </ng-container>
+  <ng-template #loadingTpl>
+    <p>
+      Loading products...
+    </p>
+  </ng-template>
+</section>
